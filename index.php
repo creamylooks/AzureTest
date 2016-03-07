@@ -1,10 +1,4 @@
-
-/**
- * Created by PhpStorm.
- * User: 1509184
- * Date: 07/03/2016
- * Time: 10:47
- */<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 </head>
@@ -15,5 +9,4 @@
    ?>
 </p>
 </body>
-<
-/html>
+</html>
