@@ -5,15 +5,15 @@
 <body>
 <p>
    <?php
-      $myAge=14;
-      if ($myAge>16) {
+      $myAge=20;
+      if ($myAge>16 && $myAge <=18) {
           print "Buy Specs";
       }
-      elseif($myAge>18) {
-          print "Buy Mugs";
+      elseif($myAge>18 && $myAge <=21) {
+          print "Buy Mugs and/or Specs";
       }
       elseif($myAge>21){
-          print "Buy Sausage Rolls";
+          print "Buy Mugs or specs or Sausage rolls";
       }
       else {
           print "You are a Minor";
