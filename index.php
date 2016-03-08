@@ -5,7 +5,9 @@
 <body>
 <p>
    <?php
-      echo "Hello World";
+      $myName = "Malick";
+      $myAge = 25;
+      echo "my name is ".$myName. "And my age is" .$myAge. "Years";
    ?>
 </p>
 </body>
