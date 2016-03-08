@@ -5,7 +5,7 @@
 <body>
 <p>
    <?php
-      $myAge=20;
+      $myAge=14;
       if ($myAge>16) {
           print "Buy Specs";
       }
