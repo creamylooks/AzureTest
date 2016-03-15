@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>PHP LOGIN Form Without Session</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
-<p>
-   <?php
-      $myAge=20;
-      if ($myAge>16 && $myAge <=18) {
-          print "Buy Specs";
-      }
-      elseif($myAge>18 && $myAge <=21) {
-          print "Buy Mugs and/or Specs";
-      }
-      elseif($myAge>21){
-          print "Buy Mugs or specs or Sausage rolls";
-      }
-      else {
-          print "You are a Minor";
-      }
-   ?>
-</p>
+<h1>PHP Login Form Without Session</h1>
+<div class="Login Box">
+    <h3>Login Form</h3>
+    <br><br>
+<form method ="Post" action="login.php">
+  <label>Username:</label><br>
+    <input type ="text" name = "Username" placeholder ="Username"/><br><br>
+  <label>Password:</label><br>
+    <input type = "password" name ="password" placeholder="password"/><br><br>
+    <input type ="Submit" name = "Submit" value = "login"/>
+    </form>
+    <div class = "error"><?php ?><?php ?></div>
+    </div>
 </body>
 </html>
