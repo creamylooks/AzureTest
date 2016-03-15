@@ -13,7 +13,7 @@ if (empty($_POST ["USERNAME"])|| empty ($_POST ["USERNAME"]))
     $result = mysqli_query($db, $sql);
     if (mysqli_row_num($result) == 1)
     {
-        header("location: home.php");
+        header("location:home.php");
     }else
     {
         echo "Incorrect username or password.";
