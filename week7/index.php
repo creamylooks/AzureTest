@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
-<h1>PHP Login Form Without Session</h1>
+<h1>PHP Login Form Without </h1>
 <div class="Login Box">
     <h3>Login Form</h3>
     <br><br>
