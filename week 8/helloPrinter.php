@@ -5,6 +5,5 @@
  * Date: 21/03/2016
  * Time: 10:21
  */
-$USERNAME=$_GET["USERNAME"];
-echo $USERNAME;
-echo "<p> Hello.$USERNAME </p>";
+$query=$_GET["query"];
+echo "<p> Hello.$query </p>";
