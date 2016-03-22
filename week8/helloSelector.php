@@ -6,8 +6,8 @@
 </head>
 <body>
 <p>Where would you like to say hello?</p>
-<a href="helloPrinter.php">Earth</a>
-<a href="helloPrinter.php">Mars</a>
-<a href="helloPrinter.php">Uranus</a>
+<a href="helloPrinter.php?planet=Earth">Earth</a>
+<a href="helloPrinter.php?planet=Mars">Mars</a>
+<a href="helloPrinter.php?planet=Uranus">Uranus</a>
 
 </body>
