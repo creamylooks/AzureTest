@@ -9,3 +9,7 @@ $firstname=$_POST["firstname"];
 $surname=$_POST["surname"];
 $gender=$_POST["gender"];
 $superhero=$_POST["superhero"];
+echo "$firstname";
+echo "$surname";
+echo "$gender";
+echo "$superhero";
