@@ -5,5 +5,5 @@
  * Date: 21/03/2016
  * Time: 10:21
  */
-$query=$_GET["query"];
-echo "<p> Hello.$query </p>";
+$planet=$_GET["planet"];
+echo "<p> Hello".$planet." </p>";
