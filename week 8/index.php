@@ -11,7 +11,7 @@
     <h3>Login Form</h3>
     <br><br>
 
-    <div class = "error"><?php ?><?php ?></div>
+    <div class = "error"></div>
 </div>
 </body>
 </html>
