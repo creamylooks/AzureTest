@@ -8,6 +8,8 @@
 
 $username=$_POST["username"];
 $password=$_POST["password"];
+echo $username.$password;
+/*
 if ($username=="damola" && $password=="damola"){
   setcookie('access_level','standarduser');
 }
