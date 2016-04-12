@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<form action="printPOST.php" method="post">
+    Title:<br>
+    <input type="text" name="title" placeholder="Enter your title"><br>
+    Content:
+    <textarea name="content" placeholder="Enter your content" rows="4" cols="5"></textarea>
+    Category
+    <select>
+    <option name="category" hidden>select a category</option>
+        <option name="cat">Cat</option>
+        <option name="dog">Dog</option>
+        <option name="misc">Misc</option>
+        </select>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
