@@ -7,4 +7,17 @@
  */
 $username=$_GET{"username"};
 $password=$_GET{"password"};
-echo $username.$password;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sendGet</title>
+</head>
+<body>
+<ul>
+    <li> <?php echo $username;?></li>
+    <li> <?php echo $password;?></li>
+</ul>
+</body>
+</html>
