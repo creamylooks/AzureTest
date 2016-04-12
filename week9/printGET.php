@@ -16,8 +16,8 @@ $password=$_GET{"password"};
 </head>
 <body>
 <ul>
-    <li> <?php echo $username;?></li>
-    <li> <?php echo $password;?></li>
+    <li> <?php echo 'Your Username is'.' ' .$username;?></li>
+    <li> <?php echo 'Your Password is'. ' '. $password;?></li>
 </ul>
 </body>
 </html>
