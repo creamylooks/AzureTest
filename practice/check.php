@@ -12,7 +12,6 @@ $choice=$_GET['option'];
 $adult="if you are over 21you can buy anything";
 $middle_age="if you are over 18 you can buy mugs or sausage rolls";
 $teenager="you have to be over 16 to buy mugs";
-$kid="you are too young";
 switch($choice){
     case 1:
         echo $teenager;
