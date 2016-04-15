@@ -7,6 +7,9 @@
 <body>
 <?php
 for ($a=1; $a<=30, $a++;){
+    if ($a=1){
+        echo "on the ".$a."st  of the month specs are available";
+    }
     if($a%2==0){
        if($a=2||$a=22){
            echo "on the ".$a."nd  of the month specs are available";
@@ -14,7 +17,7 @@ for ($a=1; $a<=30, $a++;){
         else{echo "on the ".$a."th of the month specs are available";}
     }
    if ($a%3==0){
-       if($a=3||$a=23){
+       if($a=3){
            echo "on the ".$a."rd  of the month specs are available";
        }
        elseif($a=21){
@@ -22,9 +25,11 @@ for ($a=1; $a<=30, $a++;){
        } else {echo "on the ".$a."th of the month specs are available";}
 
    }
-    if ($a=1){
-        echo "on the ".$a."st  of the month specs are available";
+    if ($a%4==0){
+        echo  "on the ".$a."th of the month specs are available";
     }
+
+
 
 }
 ?>
