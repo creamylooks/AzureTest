@@ -9,10 +9,10 @@
 <?php
 for ($a=1; $a<=30; $a++)
 {
-    if ($a % 4 == 0) {
+    if ($a % 4 ) {
         echo "on the " . $a . "th of the month specs are available";
     }
-    if ($a % 3 == 0) {
+    if ($a % 3 ) {
         if ($a = 3) {
             echo "on the " . $a . "rd  of the month specs are available";
         } elseif ($a = 21) {
@@ -22,7 +22,7 @@ for ($a=1; $a<=30; $a++)
         }
 
     }
-    if ($a % 2 == 0) {
+    if ($a % 2 ) {
         if ($a = 2 || $a = 22) {
             echo "on the " . $a . "nd  of the month specs are available";
         } else {
