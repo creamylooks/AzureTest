@@ -24,6 +24,6 @@ switch($choice){
         break;
 }
 ?>
-<p> Thanks for your patronage</p>
+
 </body>
 </html>
