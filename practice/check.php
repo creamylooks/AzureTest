@@ -8,21 +8,22 @@
 <?php
 $myAge=$_GET['age'];
 $username=$_GET['username'];
-
-$adult="you are allowed to buy mugs or sausage rolls or Specs";
-$middle_age="you are allowed to buy mugs or sausage rolls";
-$teenager="you are allowed to buy only mugs";
+$choice=$_GET['option'];
+$adult="if you are over 21you can buy anything";
+$middle_age="if you are over 18 you can buy mugs or sausage rolls";
+$teenager="you have to be over 16 to buy mugs";
 $kid="you are too young";
-if($myAge<=16){
-    echo $kid;
+switch($choice){
+    case 1:
+        echo $teenager;
+        break;
+    case 2:
+        echo $middle_age;
+        break;
+    case 3:
+        echo $adult;
+        break;
 }
-elseif($myAge>16 && $myAge<=18){
-    echo $teenager;
-}
-elseif($myAge>18 && $myAge<=21){
-    echo $middle_age;
-}
-else{echo $adult;}
 ?>
 <p> Thanks for your patronage</p>
 </body>
