@@ -12,7 +12,7 @@ for ($a=1; $a<=30; $a++)
    // if ($a = 1) {
      //   echo "on the " . $a . "st  of the month specs are available";
    // }
-    if ($a % 2 == 0) {
+    /*if ($a % 2 == 0) {
         if ($a = 2 || $a = 22) {
             echo "on the " . $a . "nd  of the month specs are available";
         } else {
@@ -38,6 +38,12 @@ for ($a=1; $a<=30; $a++)
  */
 
     // echo $a . "<br>";
+
+    if ($a % 2) {
+        echo "two modules";
+    } elseif ($a % 3){
+        echo "three modules";
+    }
 }
 
 ?>
