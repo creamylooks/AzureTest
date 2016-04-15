@@ -39,9 +39,9 @@ for ($a=1; $a<=30; $a++)
 
     // echo $a . "<br>";
 
-    if ($a % 2) {
+    if ($a % 3) {
         echo "two modules";
-    } elseif ($a % 3){
+    } elseif ($a % 2){
         echo "three modules";
     }
 }
