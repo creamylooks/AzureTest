@@ -43,8 +43,8 @@ for ($a=1; $a<=30; $a++)
         echo "four modules" . "<br>";
     } elseif ($a % 3){
         echo "three";
-    } else {
-        echo "Four";
+    } elseif ($a % 2) {
+        echo "two";
     }
 }
 
