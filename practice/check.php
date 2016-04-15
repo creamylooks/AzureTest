@@ -9,10 +9,10 @@
 <?php
 for ($a=1; $a<=30; $a++)
 {
-   // if ($a = 1) {
-     //   echo "on the " . $a . "st  of the month specs are available";
-   // }
-    /*if ($a % 2 == 0) {
+   if ($a = 1) {
+        echo "on the " . $a . "st  of the month specs are available";
+   }
+    if ($a % 2 == 0) {
         if ($a = 2 || $a = 22) {
             echo "on the " . $a . "nd  of the month specs are available";
         } else {
@@ -32,20 +32,14 @@ for ($a=1; $a<=30; $a++)
     if ($a % 4 == 0) {
         echo "on the " . $a . "th of the month specs are available";
     }
-    /*if($a %2 !=0 && $a%3 !=0 && $a%4 !=0){
+    if($a %2 !=0 && $a%3 !=0 && $a%4 !=0){
         echo "nothing is available on the ".$a."th of the month";
    }
- */
 
-    // echo $a . "<br>";
 
-    if ($a % 4) {
-        echo "four modules" . "<br>";
-    } elseif ($a % 3){
-        echo "three" . "<br>";
-    } elseif ($a % 2) {
-        echo "two" . "<br>";
-    }
+
+
+
 }
 
 ?>
