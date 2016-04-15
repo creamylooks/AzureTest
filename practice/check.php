@@ -9,7 +9,7 @@
 $myAge=$_GET['age'];
 $username=$_GET['username'];
 $choice=$_GET['option'];
-$provision= array("Mugs","Specs","Sausage Rolls");
+$provision= array("hugs","Specs");
 foreach($provision as $x){
     echo "<p>$x</p>";
 }
