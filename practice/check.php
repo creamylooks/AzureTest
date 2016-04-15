@@ -24,5 +24,6 @@ elseif($myAge>18 && $myAge<=21){
 }
 else{echo $adult;}
 ?>
+<p> Thanks for your patronage</p>
 </body>
 </html>
