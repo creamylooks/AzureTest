@@ -5,6 +5,7 @@
     <title>check</title>
 </head>
 <body>
+<h1> am I ok</h1>
 <?php
 for ($a=1; $a <= 30; $a++)
 {
