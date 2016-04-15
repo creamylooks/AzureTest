@@ -6,7 +6,8 @@
 </head>
 <body>
 <?php
-for ($a=1; $a<=30, $a++;) {
+for ($a=1; $a<=30; $a++)
+{
     if ($a = 1) {
         echo "on the " . $a . "st  of the month specs are available";
     }
