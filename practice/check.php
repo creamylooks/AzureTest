@@ -6,12 +6,26 @@
 </head>
 <body>
 <?php
-$myAge=$_GET['age'];
-$username=$_GET['username'];
-$choice=$_GET['option'];
-$provision= array("hugs","Specs");
-foreach($provision as $x){
-    echo "<p>$x</p>";
+for ($a=1; $a<=30, $a++;){
+    if($a%2==0){
+       if($a=2||$a=22){
+           echo "on the ".$a."nd  of the month specs are available";
+       }
+        else{echo "on the ".$a."th of the month specs are available";}
+    }
+   if ($a%3==0){
+       if($a=3||$a=23){
+           echo "on the ".$a."rd  of the month specs are available";
+       }
+       elseif($a=21){
+           echo "on the ".$a."st  of the month specs are available";
+       } else {echo "on the ".$a."th of the month specs are available";}
+
+   }
+    if ($a=1){
+        echo "on the ".$a."st  of the month specs are available";
+    }
+
 }
 ?>
 
