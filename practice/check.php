@@ -13,7 +13,7 @@ $adult="if you are over 21you can buy anything";
 $middle_age="if you are over 18 you can buy mugs or sausage rolls";
 $teenager="you have to be over 16 to buy mugs";
 switch($choice){
-    case "mugs":
+    case "Mugs":
         echo $teenager;
         break;
     case "":
