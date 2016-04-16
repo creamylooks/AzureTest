@@ -14,7 +14,7 @@ $todaygood=rand(0,2);
 while($todaygood<=17){
     echo $todaygood;
 }
-echo "nothing is available on this day";
+echo "nothing is availabe today";
 
 ?>
 
