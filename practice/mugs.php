@@ -7,11 +7,22 @@
  * */
 $names=array("fffd","fdfdsfsd","DVSDV","ffdsaf","GGSGS","DFDSFSD","DGSDg","FSDBFGF","EFEWFew","WGdsgsd","FEDFD");
 sort($names);
-$items=array("smugs","cream","rolls");
 for ($i=1; $i<4; $i++) {
     $winner = array_rand($names, 1);
-    echo"The winner of the".$items[0]." is". $names[$winner]."<br>";
-    $items[0]++;
+    switch($i){
+        case 1:
+            echo"The winner of the smugs is". $names[$winner]."<br>";
+            break;
+        case 2:
+            echo"The winner of the cream is". $names[$winner]."<br>";
+            break;
+        case 3:
+            echo"The winner of the sausage rolls is". $names[$winner]."<br>";
+            break;
+    }
+
     unset($names[$winner]);
+
+
 
 }
