@@ -10,7 +10,7 @@
 for ($a=1; $a<=30; $a++)
 {
     if ($a % 4==0 ) {
-        echo "on the " . $a . "th of the month specs are available";
+        echo "on the " . $a . "th of the month sausage rolls are available";
         echo "<br>";
     }
     if ($a % 3 ==0) {
@@ -28,14 +28,14 @@ for ($a=1; $a<=30; $a++)
     }
     if ($a % 2 ==0) {
         if ($a == 2 || $a ==22) {
-            echo "on the " . $a . "nd  of the month specs are available";
+            echo "on the " . $a . "nd  of the month mugs are available";
             echo "<br>";
         } else {
-            echo "on the " . $a . "th of the month specs are available";
+            echo "on the " . $a . "th of the month mugs are available";
             echo "<br>";
         }
    if ($a ==1) {
-        echo "on the " . $a . "st  of the month specs are available";
+        echo "on the " . $a . "st  of the month mugs are available";
        echo "<br>";
    }
 
