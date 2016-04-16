@@ -7,9 +7,11 @@
  * */
 $names=array("fffd","fdfdsfsd","DVSDV","ffdsaf","GGSGS","DFDSFSD","DGSDg","FSDBFGF","EFEWFew","WGdsgsd","FEDFD");
 sort($names);
+$items=array("smugs","cream","rolls");
 for ($i=1; $i<4; $i++) {
     $winner = array_rand($names, 1);
-    echo $names[$winner]."<br>";
+    echo"The winner of the".$items[0]." is". $names[$winner]."<br>";
+    $items[0]++;
     unset($names[$winner]);
 
 }
