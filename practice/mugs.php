@@ -9,8 +9,7 @@ $names=array("fffd","fdfdsfsd","DVSDV","ffdsaf","GGSGS","DFDSFSD","DGSDg","FSDBF
 sort($names);
 for ($i=1; $i<4; $i++) {
     $winner = array_rand($names, 1);
-    echo $names[$winner];
-    echo "<br>";
+    echo $names[$winner]."<br>";
     unset($names[$winner]);
 
 }
