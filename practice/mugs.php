@@ -6,6 +6,7 @@
  * Time: 09:37
  */
 $provs=array("mugs","specs","rock and roll");
+$provs[0]="hugs";
 foreach($provs as $x){
     echo "<p>$x</x>";
 }
