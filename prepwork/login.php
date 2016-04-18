@@ -9,6 +9,7 @@ include('dbconnect.php');
 
 if(empty($_POST['username'])|| empty ($_POST['password'])){
     echo "Both fields are Required";
+    header("location:index.html");
 }
 else{
     $username=$_POST['username'];
@@ -18,5 +19,7 @@ else{
     $result=mysqli_query($db,$sql);
     if(mysqli_num_rows($result)==1){
         header("location:home.php");
-    }else{echo "Username or password incorrect.";}
+    }else{echo "Username or password incorrect.";
+    header("location:index.html");
+    }
 }
