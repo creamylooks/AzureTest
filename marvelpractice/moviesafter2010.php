@@ -5,7 +5,8 @@
  * Date: 18/04/2016
  * Time: 18:02
  */
-$sql=mysqli_query("SELECT * FROM marvelmovies WHERE yearReleased= '2010'");
+include('dbconnect.php');
+$sql=mysqli_query("SELECT * FROM marvelmovies WHERE yearReleased>='2010'");
 $result=mysql_query ($db,$sql);
 echo "<p>"."Movie ID"."</p>". "&nbsp;&nbsp;&nbsp;"."<p>"."Year Released"."</p>". "&nbsp;&nbsp;&nbsp;"."<p>"."Title"."</p>"."&nbsp;&nbsp;&nbsp;"."<p>"."Production Studio"."</p>"."&nbsp;&nbsp;&nbsp;"."<p>"."Notes"."</p>"."<br><br>";
 while($row = $result->fetch_array()){

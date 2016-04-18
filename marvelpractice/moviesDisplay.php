@@ -5,13 +5,7 @@
  * Date: 18/04/2016
  * Time: 18:01
  */
-if(empty ($_POST['username'])||empty($_POST['password'])){
-    echo "please enter your username and password";
-}
-else{
-    $username=$_POST['username'];
-    $password=$_POST['password'];
-
+include('dbconnect.php');
     $sql=mysqli_query("SELECT * FROM marvelmovies");
     $result=mysql_query ($db,$sql);
     echo "<p>"."Movie ID"."</p>". "&nbsp;&nbsp;&nbsp;"."<p>"."Year Released"."</p>". "&nbsp;&nbsp;&nbsp;"."<p>"."Title"."</p>"."&nbsp;&nbsp;&nbsp;"."<p>"."Production Studio"."</p>"."&nbsp;&nbsp;&nbsp;"."<p>"."Notes"."</p>"."<br><br>";
@@ -23,4 +17,3 @@ else{
         $comments = $row['notes'];
         echo "<p>" . $id . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movieyear . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movietitle . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $studio . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $comments . "</p>" . "<br><br>";
     }
-}

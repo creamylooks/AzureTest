@@ -6,7 +6,7 @@
     </head>
     <body>
         <div id="loginbox">
-            <form action="moviesDisplay.php" method="post">
+            <form action="index.php" method="post">
                 <label>Username:</label><br>
                 <input type="text" name="username" placeholder="user"><br><br>
                 <label>Password:</label>
@@ -14,5 +14,21 @@
                 <button>Submit</button>
             </form>
         </div>
+    <?php
+        if(empty ($_POST['username'])||empty($_POST['password'])){
+            echo "<p>"."please enter your username and password"."<p>";
+        }
+        else {
+            $username=$_POST['username'];
+            $password=$_POST['password'];
+            $sql= "SELECT p_id FROM people WHERE username=$username AND password=$password";
+            $result=mysqli_query($db,$sql);
+                if(mysqli_num_rows($result)==1){
+                    header("location:home.php");
+                }
+                else{ echo "<p>"."Username or Password Incorrect"."</p>";}
+
+        }
+    ?>
     </body>
  </html>
