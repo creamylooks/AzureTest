@@ -15,8 +15,8 @@
         <input type="password" name="password" placeholder="password">
         <br><br>
         <button>Submit</button>
-
     </form>
+    <div class = "error"><?php ?><?php ?></div>
 </div>
 </body>
 </html>
