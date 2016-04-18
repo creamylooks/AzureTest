@@ -1,8 +1,6 @@
 #formbox{
     border: 2px solid darkblue;
-    border-top: 50px darkblue solid;
-    padding: 30px;
-    align-content: center;
+    padding: 80px ;
     margin:200px;
     text-align: center;
 }
