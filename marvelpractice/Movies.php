@@ -15,13 +15,13 @@ switch($resp){
     case 'allMovies':
         $sql=mysqli_query("SELECT * FROM marvelmovies");
         $result=mysql_query ($db,$sql);
-        echo $result;
         $row = $result->fetch_array();
         $id = $row['marvelMovieID'];
-        $movietitle = $row['title'];
+        /*$movietitle = $row['title'];
         $movieyear = $row['yearReleased'];
         $studio = $row['Production Studio'];
         $comments = $row['notes'];
+       */
         while($row) {
 
             echo "<p>" . $id . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movieyear . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movietitle . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $studio . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $comments . "</p>" . "<br><br>";
