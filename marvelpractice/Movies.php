@@ -13,6 +13,7 @@ echo $resp;
 
 switch($resp){
     case 'allMovies':
+        echo"yea";
         $sql=mysqli_query("SELECT * FROM marvelmovies");
         $result=mysql_query ($db,$sql);
         $row = $result->fetch_array();
