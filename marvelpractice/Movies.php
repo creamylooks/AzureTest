@@ -22,26 +22,54 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-            echo "<p>{$id}</p>   <p>{$movieyear}</p>   <p>{$movietitle}</p>      <p>{$studio}</p>      <p>{$comments}</p>";
+            echo "{$id} {$movieyear}{$movietitle}{$studio} {$comments}";
 
         }
         break;
     case $marvel:
-        $sql = mysqli_query("SELECT * FROM marvelmovies WHERE productionStudio= 'Marvel Studios'");
+        $sql = "SELECT * FROM marvelmovies WHERE productionStudio= 'Marvel Studios'";
+        $result = $db->query($sql);
+        $row = $result->fetch_array();
+
         while ($row) {
-            echo "<p>" . $id . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movieyear . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movietitle . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $studio . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $comments . "</p>" . "<br><br>";
+            $id = $row['marvelMovieID'];
+            $movietitle = $row['title'];
+            $movieyear = $row['yearReleased'];
+            $studio = $row['Production Studio'];
+            $comments = $row['notes'];
+            echo "{$id}    {$movieyear}    {$movietitle}    {$studio}        {$comments}";
+
         }
         break;
     case $byYear:
-        $sql = mysqli_query("SELECT * FROM marvelmovies WHERE yearReleased>='2010'");
+        $sql = "SELECT * FROM marvelmovies WHERE yearReleased>='2010'";
+        $result = $db->query($sql);
+        $row = $result->fetch_array();
+
         while ($row) {
-            echo "<p>" . $id . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movieyear . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movietitle . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $studio . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $comments . "</p>" . "<br><br>";
+            $id = $row['marvelMovieID'];
+            $movietitle = $row['title'];
+            $movieyear = $row['yearReleased'];
+            $studio = $row['Production Studio'];
+            $comments = $row['notes'];
+            echo "{$id} {$movieyear}{$movietitle}{$studio} {$comments}";
+
         }
         break;
     case $xMen:
-        $sql = mysqli_query("SELECT * FROM marvelmovies WHERE title LIKE 'X-Men'");
+        $sql = "SELECT * FROM marvelmovies WHERE title LIKE 'X-Men'";
+        $result = $db->query($sql);
+        $row = $result->fetch_array();
+
         while ($row) {
-            echo "<p>" . $id . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movieyear . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movietitle . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $studio . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $comments . "</p>" . "<br><br>";
+            $id = $row['marvelMovieID'];
+            $movietitle = $row['title'];
+            $movieyear = $row['yearReleased'];
+            $studio = $row['Production Studio'];
+            $comments = $row['notes'];
+            echo "{$id} {$movieyear}{$movietitle}{$studio} {$comments}";
+
         }
+        break;
 
 }
