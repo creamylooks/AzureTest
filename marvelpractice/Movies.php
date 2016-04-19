@@ -13,9 +13,9 @@ echo $resp;
 
 switch($resp){
     case 'allMovies':
-        echo"yea";
         $sql=mysqli_query("SELECT * FROM marvelmovies");
         $result=mysql_query ($db,$sql);
+        echo $result;
         $row = $result->fetch_array();
         $id = $row['marvelMovieID'];
         $movietitle = $row['title'];
