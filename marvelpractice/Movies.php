@@ -26,7 +26,7 @@ switch ($resp) {
 
         }
         break;
-    case $marvel:
+    case 'moviesbymarvel':
         $sql = "SELECT * FROM marvelmovies WHERE productionStudio= 'Marvel Studios'";
         $result = $db->query($sql);
         $row = $result->fetch_array();
@@ -41,7 +41,7 @@ switch ($resp) {
 
         }
         break;
-    case $byYear:
+    case 'moviesAfter2010':
         $sql = "SELECT * FROM marvelmovies WHERE yearReleased>='2010'";
         $result = $db->query($sql);
         $row = $result->fetch_array();
@@ -56,7 +56,7 @@ switch ($resp) {
 
         }
         break;
-    case $xMen:
+    case'xmen':
         $sql = "SELECT * FROM marvelmovies WHERE title LIKE 'X-Men'";
         $result = $db->query($sql);
         $row = $result->fetch_array();
