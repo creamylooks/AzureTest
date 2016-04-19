@@ -11,18 +11,19 @@ $byYear=$_GET['Movies After 2010'];
 $xMen=$_GET['All X-Men Movies'];
 include('dbconnect.php');
 echo "Movie ID"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Year Released"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Title"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Production Studio"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Notes"."<br><br>";
-$result=mysql_query ($db,$sql);
+
 
 
 switch($_GET){
     case $all:
+        $sql=mysqli_query("SELECT * FROM marvelmovies");
+        $result=mysql_query ($db,$sql);
         $row = $result->fetch_array();
         $id = $row['marvelMovieID'];
         $movietitle = $row['title'];
         $movieyear = $row['yearReleased'];
         $studio = $row['Production Studio'];
         $comments = $row['notes'];
-        $sql=mysqli_query("SELECT * FROM marvelmovies");
         while($row) {
 
             echo "<p>" . $id . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movieyear . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movietitle . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $studio . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $comments . "</p>" . "<br><br>";
