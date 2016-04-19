@@ -12,7 +12,7 @@ echo "Movie ID" . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . "Year Released" . "&n
 switch ($resp) {
     case 'allMovies':
         $sql = mysqli_query("SELECT * FROM marvelmovies");
-        $result = mysql_query($db, $sql);
+        $result = $db->query($sql);
         $row = $result->fetch_array();
 
         while ($row = $result->fetch_array()) {
