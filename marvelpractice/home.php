@@ -5,7 +5,7 @@
         <title>Welcome</title>
     </head>
     <body>
-    <form action="moviesDisplay.php" method="get">
+    <form action="Movies.php" method="get">
         <button>All Movies</button>
         <button>Movies By Marvel</button>
         <button>Movies After 2010</button>
