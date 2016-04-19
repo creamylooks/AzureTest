@@ -30,7 +30,7 @@ switch ($resp) {
             <td>{$movieyear}</td>
             <td>{$movietitle}</td>
             <td>{$studio}</td>
-            <td>{$comments}</td><br>
+            <td>{$comments}</td>
              ";
 
         }
