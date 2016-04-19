@@ -16,7 +16,7 @@ switch ($resp) {
         $result = $db->query($sql);
         $row = $result->fetch_array();
 
-        while ($row) {
+        while ( $row = $result->fetch_array()) {
             $id = $row['marvelMovieID'];
             $movietitle = $row['title'];
             $movieyear = $row['yearReleased'];
