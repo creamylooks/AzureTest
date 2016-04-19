@@ -10,16 +10,18 @@ $marvel=$_GET['Movies By Marvel'];
 $byYear=$_GET['Movies After 2010'];
 $xMen=$_GET['All X-Men Movies'];
 include('dbconnect.php');
-echo "<p>"."Movie ID"."</p>". "&nbsp;&nbsp;&nbsp;"."<p>"."Year Released"."</p>". "&nbsp;&nbsp;&nbsp;"."<p>"."Title"."</p>"."&nbsp;&nbsp;&nbsp;"."<p>"."Production Studio"."</p>"."&nbsp;&nbsp;&nbsp;"."<p>"."Notes"."</p>"."<br><br>";
+echo "<p>"."Movie ID"."</p>"."<p>"."Year Released"."</p>". "<p>"."Title"."</p>"."<p>"."Production Studio"."</p>"."<p>"."Notes"."</p>"."<br><br>";
 $result=mysql_query ($db,$sql);
-$row = $result->fetch_array();
-$id = $row['marvelMovieID'];
-$movietitle = $row['title'];
-$movieyear = $row['yearReleased'];
-$studio = $row['Production Studio'];
-$comments = $row['notes'];
+
+
 switch($_GET){
     case $all:
+        $row = $result->fetch_array();
+        $id = $row['marvelMovieID'];
+        $movietitle = $row['title'];
+        $movieyear = $row['yearReleased'];
+        $studio = $row['Production Studio'];
+        $comments = $row['notes'];
         $sql=mysqli_query("SELECT * FROM marvelmovies");
         while($row) {
 
