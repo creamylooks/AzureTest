@@ -17,7 +17,7 @@ switch ($resp) {
         $row = $result->fetch_array();
         echo "<table>
             <thead>
-            <tr><th>Id</th><th>Movie ID</th><th>Year Released</th><th>Title</th><th>Production Studio</th><th>Notes</th>
+            <tr><th>Movie ID</th><th>Year Released</th><th>Title</th><th>Production Studio</th><th>Notes</th>
             </tr></thead>";
         while ( $row = $result->fetch_array()) {
             $id = $row['marvelMovieID'];
