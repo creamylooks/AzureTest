@@ -16,18 +16,13 @@ switch ($resp) {
         $result = $db->query($sql);
         $row = $result->fetch_array();
 
-        while ($row = $result->fetch_array()) {
+        while ($row) {
             $id = $row['marvelMovieID'];
             $movietitle = $row['title'];
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-            echo "test";
-            echo "<p>{$id}</p>
-            <p>{$movieyear}</p>
-            <p>{$movietitle}</p>
-            <p>{$studio}</p>
-            <p>{$comments}</p>";
+            echo "<p>{$id}</p>   <p>{$movieyear}</p>   <p>{$movietitle}</p>      <p>{$studio}</p>      <p>{$comments}</p>";
 
         }
         break;
