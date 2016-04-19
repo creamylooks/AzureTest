@@ -21,7 +21,7 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-
+            echo "test";
             echo "<p>{$id}</p>
             <p>{$movieyear}</p>
             <p>{$movietitle}</p>
