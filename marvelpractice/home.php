@@ -5,11 +5,8 @@
         <title>Welcome</title>
     </head>
     <body>
-    <form action="Movies.php" method="get">
-        <button name="All Movies">All Movies</button>
-        <button>Movies By Marvel</button>
-        <button>Movies After 2010</button>
-        <button>All X-Men Movies</button>
-    </form>
+   <a href="Movies.php?movies=allMovies">All Movies</a>
+   <a href="Movies.php?movies=moviesbymarvel">All Movies</a>
+   <a href="Movies.php?movies=moviesAfter2010">All Movies</a>
     </body>
 </html>

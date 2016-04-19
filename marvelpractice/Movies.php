@@ -5,17 +5,14 @@
  * Date: 18/04/2016
  * Time: 19:57
  */
-$all=$_GET['All Movies'];
-$marvel=$_GET['Movies By Marvel'];
-$byYear=$_GET['Movies After 2010'];
-$xMen=$_GET['All X-Men Movies'];
+$resp=$_GET['movies'];
 include('dbconnect.php');
 echo "Movie ID"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Year Released"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Title"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Production Studio"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Notes"."<br><br>";
 
 
 
-switch($_GET){
-    case $all:
+switch($resp){
+    case 'allMovies':
         $sql=mysqli_query("SELECT * FROM marvelmovies");
         $result=mysql_query ($db,$sql);
         $row = $result->fetch_array();
