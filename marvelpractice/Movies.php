@@ -22,7 +22,7 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-            echo "{$id} {$movieyear}{$movietitle}{$studio} {$comments}";
+            echo "{$id} {$movieyear}{$movietitle}{$studio}{$comments}";
 
         }
         break;
@@ -37,7 +37,7 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-            echo "{$id}    {$movieyear}    {$movietitle}    {$studio}        {$comments}";
+            echo "{$id}{$movieyear}{$movietitle}{$studio}{$comments}";
 
         }
         break;
