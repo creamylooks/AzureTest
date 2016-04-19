@@ -48,17 +48,9 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-            echo "
-            <tr>
-            <td>{$id}</td>
-            <td>{$movieyear}</td>
-            <td>{$movietitle}</td>
-            <td>{$studio}</td>
-            <td>{$comments}</td>
-             </tr>";
+           
 
         }
-        echo "</table>";
         break;
     case 'moviesAfter2010':
         $sql = "SELECT * FROM marvelmovies WHERE yearReleased>='2010'";
@@ -71,17 +63,9 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-            echo "
-            <tr>
-            <td>{$id}</td>
-            <td>{$movieyear}</td>
-            <td>{$movietitle}</td>
-            <td>{$studio}</td>
-            <td>{$comments}</td>
-             </tr>";
+            echo "{$id} {$movieyear}{$movietitle}{$studio} {$comments}";
 
         }
-        echo "</table>";
         break;
     case'xmen':
         $sql = "SELECT * FROM marvelmovies WHERE title LIKE 'X-Men'";
@@ -94,17 +78,9 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-            echo "
-            <tr>
-            <td>{$id}</td>
-            <td>{$movieyear}</td>
-            <td>{$movietitle}</td>
-            <td>{$studio}</td>
-            <td>{$comments}</td>
-             </tr>";
+            echo "{$id} {$movieyear}{$movietitle}{$studio} {$comments}";
 
         }
-        echo "</table>";
         break;
 
 }
