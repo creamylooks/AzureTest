@@ -26,12 +26,13 @@ switch ($resp) {
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
             echo "
+            <tr>
             <td>{$id}</td>
             <td>{$movieyear}</td>
             <td>{$movietitle}</td>
             <td>{$studio}</td>
             <td>{$comments}</td>
-             ";
+             </tr>";
 
         }
         echo "</table>";
