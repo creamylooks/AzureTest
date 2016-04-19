@@ -6,7 +6,7 @@
     </head>
     <body>
     <form action="Movies.php" method="get">
-        <button>All Movies</button>
+        <button name="All Movies">All Movies</button>
         <button>Movies By Marvel</button>
         <button>Movies After 2010</button>
         <button>All X-Men Movies</button>
