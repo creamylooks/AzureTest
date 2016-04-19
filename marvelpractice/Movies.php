@@ -9,7 +9,7 @@ $resp=$_GET['movies'];
 include('dbconnect.php');
 echo "Movie ID"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Year Released"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Title"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Production Studio"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Notes"."<br><br>";
 
-
+echo $resp;
 
 switch($resp){
     case 'allMovies':
