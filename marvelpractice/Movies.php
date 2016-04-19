@@ -11,7 +11,7 @@ echo "Movie ID" . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . "Year Released" . "&n
 
 switch ($resp) {
     case 'allMovies':
-        echo "in case";
+
         $sql = "SELECT * FROM marvelmovies";
         $result = $db->query($sql);
         $row = $result->fetch_array();
