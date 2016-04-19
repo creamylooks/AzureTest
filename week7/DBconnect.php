@@ -10,4 +10,3 @@ define('DB_USERNAME','b28b1ba3c7f01f');
 define('DB_PASSWORD','12d5f6d8');
 define('DB_DATABASE','creamy');
 $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
-?>

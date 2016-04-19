@@ -19,6 +19,7 @@
             echo "<p>"."please enter your username and password"."<p>";
         }
         else {
+            include('dbconnect.php');
             $username=$_POST['username'];
             $password=$_POST['password'];
             $sql= "SELECT p_id FROM people WHERE username=$username AND password=$password";

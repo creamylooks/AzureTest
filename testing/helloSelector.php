@@ -7,6 +7,6 @@
  */
 
 echo "<h2>". "Where would you like to say hello"."</h2>";
-echo "<p class='planet'>"."Earth"."<p><br>";
+echo "<a href="http">"."Earth"."<p><br>";
 echo "<p class='planet'>"."Mars"."<p><br>";
 echo "<p class='planet'>"."Uranus"."<p><br>";
