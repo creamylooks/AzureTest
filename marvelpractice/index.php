@@ -22,7 +22,7 @@
             include('dbconnect.php');
             $username=$_POST['username'];
             $password=$_POST['password'];
-            $sql= "SELECT * FROM people WHERE username='$username' AND password=''$password''";
+            $sql= "SELECT * FROM people WHERE username='".$username."' AND password='".$password."'";
             $result=mysqli_query($db,$sql);
                 if(mysqli_num_rows($result)==1){
                     header("location:home.php");
