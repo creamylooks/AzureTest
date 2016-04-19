@@ -10,7 +10,7 @@ $marvel=$_GET['Movies By Marvel'];
 $byYear=$_GET['Movies After 2010'];
 $xMen=$_GET['All X-Men Movies'];
 include('dbconnect.php');
-echo "<p>"."Movie ID"."</p>"."<p>"."Year Released"."</p>". "<p>"."Title"."</p>"."<p>"."Production Studio"."</p>"."<p>"."Notes"."</p>"."<br><br>";
+echo "        Movie ID      "."      Year Released     ".     "Title"               ."      Production Studio      "."                    Notes                 "."<br><br>";
 $result=mysql_query ($db,$sql);
 
 
