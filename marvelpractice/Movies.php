@@ -9,22 +9,25 @@ $resp=$_GET['movies'];
 include('dbconnect.php');
 echo "Movie ID"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Year Released"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Title"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Production Studio"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."Notes"."<br><br>";
 
-echo $resp;
-
 switch($resp){
     case 'allMovies':
         $sql=mysqli_query("SELECT * FROM marvelmovies");
         $result=mysql_query ($db,$sql);
         $row = $result->fetch_array();
         $id = $row['marvelMovieID'];
-        /*$movietitle = $row['title'];
+        $movietitle = $row['title'];
         $movieyear = $row['yearReleased'];
         $studio = $row['Production Studio'];
         $comments = $row['notes'];
-       */
+
         while($row) {
 
-            echo "<p>" . $id . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movieyear . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $movietitle . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $studio . "</p>" . "&nbsp;&nbsp;&nbsp;" . "<p>" . $comments . "</p>" . "<br><br>";
+            echo "<p>{$id}</p>
+            <p>{$movieyear}</p>
+            <p>{$movietitle}</p>
+            <p>{$studio}</p>
+            <p>{$comments}</p>";
+
         }
     break;
     case $marvel:
