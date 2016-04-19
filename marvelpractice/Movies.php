@@ -8,17 +8,17 @@
 $resp = $_GET['movies'];
 include('dbconnect.php');
 //echo "Movie ID" . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . "Year Released" . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . "Title" . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . "Production Studio" . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . "Notes" . "<br><br>";
-
+echo "<table>
+            <thead>
+            <tr><th>Movie ID</th><th>Year Released</th><th>Title</th><th>Production Studio</th><th>Notes</th>
+            </tr></thead>";
 switch ($resp) {
     case 'allMovies':
 
         $sql = "SELECT * FROM marvelmovies";
         $result = $db->query($sql);
         $row = $result->fetch_array();
-        echo "<table>
-            <thead>
-            <tr><th>Movie ID</th><th>Year Released</th><th>Title</th><th>Production Studio</th><th>Notes</th>
-            </tr></thead>";
+
         while ( $row = $result->fetch_array()) {
             $id = $row['marvelMovieID'];
             $movietitle = $row['title'];
@@ -48,10 +48,17 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-           
+            echo "
+            <tr>
+            <td>{$id}</td>
+            <td>{$movieyear}</td>
+            <td>{$movietitle}</td>
+            <td>{$studio}</td>
+            <td>{$comments}</td>
+             </tr>";
 
         }
-        break;
+        echo "</table>";
     case 'moviesAfter2010':
         $sql = "SELECT * FROM marvelmovies WHERE yearReleased>='2010'";
         $result = $db->query($sql);
@@ -63,10 +70,17 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-            echo "{$id} {$movieyear}{$movietitle}{$studio} {$comments}";
+            echo "
+            <tr>
+            <td>{$id}</td>
+            <td>{$movieyear}</td>
+            <td>{$movietitle}</td>
+            <td>{$studio}</td>
+            <td>{$comments}</td>
+             </tr>";
 
         }
-        break;
+        echo "</table>";
     case'xmen':
         $sql = "SELECT * FROM marvelmovies WHERE title LIKE 'X-Men'";
         $result = $db->query($sql);
@@ -78,9 +92,16 @@ switch ($resp) {
             $movieyear = $row['yearReleased'];
             $studio = $row['Production Studio'];
             $comments = $row['notes'];
-            echo "{$id} {$movieyear}{$movietitle}{$studio} {$comments}";
+            echo "
+            <tr>
+            <td>{$id}</td>
+            <td>{$movieyear}</td>
+            <td>{$movietitle}</td>
+            <td>{$studio}</td>
+            <td>{$comments}</td>
+             </tr>";
 
         }
-        break;
+        echo "</table>";
 
 }
