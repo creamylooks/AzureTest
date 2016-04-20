@@ -10,4 +10,4 @@ $fname=$_POST['firstname'];
 $lname=$_POST['lastname'];
 $gender=$_POST['gender'];
 $hero=$_POST['superhero'];
-$sql="INSERT INTO superhero (firstname,lastname,gender,fav_superhero) VALUES ('$fname','$lname','$gender','$hero')";
+$sql="INSERT INTO 'superhero' ('firstname','lastname','gender','fav_superhero') VALUES ('$fname','$lname','$gender','$hero')";
