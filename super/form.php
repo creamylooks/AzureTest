@@ -10,12 +10,13 @@
     Lastname:  <input type="text" name="lastname" placeholder="lname"><br><br>
     SuperHero: <input type="text" name="superhero" placeholder="hero"><br><br>
     <label>
+        Gender:
         <input type="radio" name="gender" value="Male" checked>
     </label>
     <label>
-        Gender:
+
         <input type="radio" name="gender" value="Female" checked>
-    </label>
+    </label><br>
     <input type="submit" value="Submit">
 
 </form>
