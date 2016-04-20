@@ -13,8 +13,10 @@
         <input type="radio" name="gender" value="Male" checked>
     </label>
     <label>
+        Gender:
         <input type="radio" name="gender" value="Female" checked>
     </label>
+    <input type="submit" value="Submit">
 
 </form>
 </body>
