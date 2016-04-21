@@ -82,7 +82,7 @@ switch ($resp) {
         }
         echo "</table>";
     case'xmen':
-        $sql = "SELECT * FROM marvelmovies WHERE title LIKE 'X-Men'";
+        $sql = "SELECT * FROM marvelmovies WHERE title '%X-Men%'";
         $result = $db->query($sql);
         $row = $result->fetch_array();
 
