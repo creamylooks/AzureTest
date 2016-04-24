@@ -10,6 +10,7 @@ $collect= "SELECT * FROM marvelmovies";
 $pointer= mysqli_query($sercon,$collect);
 //or      $pointer=$sercon->query($collect);
 $row=(mysqli_num_rows($pointer));
+echo "<table><th><th>Year Released</th><th>Title</th><th>Production Studio</th><th>Notes</th></tr><br>";
 while($row>0){
     $result=mysqli_fetch_array($pointer);
     echo "
@@ -19,3 +20,4 @@ while($row>0){
           {$result['notes']} ";
  $row--;
 }
+echo"</table>";
