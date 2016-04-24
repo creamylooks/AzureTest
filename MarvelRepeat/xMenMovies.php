@@ -6,7 +6,7 @@
  * Time: 13:24
  */
 include ('connection.php');
-$collect= "SELECT * FROM marvelmovies WHERE title LIKE 'X-MEN'";
+$collect= "SELECT * FROM marvelmovies WHERE title LIKE '%X-MEN%'";
 $pointer= mysqli_query($sercon,$collect);
 //or      $pointer=$sercon->query($collect);
 $row=(mysqli_num_rows($pointer));
