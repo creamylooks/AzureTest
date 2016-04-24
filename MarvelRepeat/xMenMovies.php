@@ -19,7 +19,8 @@ while($row>0){
           {$result['notes']} ";
     $row--;
 }
-$cas="INSERT INTO users (username,password) VALUES (olajide,abdullah) ";
+$cas="INSERT INTO users (username,password) VALUES (olajide,abdull) ";
 $done=mysql_query($sercon,$cas);
 if($done){
 echo "done it";}
+echo"dggf";
