@@ -34,7 +34,7 @@
             while($rows>0){
                 $arr=mysqli_fetch_array($res);
                 echo "
-                <option> $arr{['mainSuperpower']}</option>
+                <option> {$arr['mainSuperpower']}</option>
                 ";
                 $rows--;
                 }
