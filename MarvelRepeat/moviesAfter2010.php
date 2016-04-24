@@ -6,7 +6,7 @@
  * Time: 13:23
  */
 include ('connection.php');
-$collect= "SELECT * FROM marvelmovies WHERE yearReleased > '2010'";
+$collect= "SELECT yearReleased title productionStudio notes FROM marvelmovies WHERE yearReleased > '2010'";
 $pointer= mysqli_query($sercon,$collect);
 //or      $pointer=$sercon->query($collect);
 $row=(mysqli_num_rows($pointer));
