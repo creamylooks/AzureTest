@@ -6,7 +6,7 @@
  * Time: 13:23
  */
 include ('connection.php');
-$collect= "SELECT yearReleased title productionStudio notes FROM marvelmovies";
+$collect= "SELECT yearReleased,title,productionStudio,notes FROM marvelmovies";
 $pointer= mysqli_query($sercon,$collect);
 //or      $pointer=$sercon->query($collect);
 $row=(mysqli_num_rows($pointer));
