@@ -7,13 +7,23 @@
 <body>
         <form action="formResponse.php" method="post">
             <p> Enter your Details</p>
-            First name<input type="text" name="fname" placeholder="Firstname"><br><br>
-            Last name<input type="text" name="lname" placeholder="Lastname"><br>
+            Firstname &nbsp &nbsp<input type="text" name="fname" placeholder="Firstname"><br><br>
+            Lastname  &nbsp &nbsp<input type="text" name="lname" placeholder="Lastname"><br><br>
+            Super Hero &nbsp <input type="text" name="superHero" placeholder="Super Hero"><br><br>
+           Select An Animal
+            <label>
+                <select name="choice">
+                    <option>Goat</option>
+                    <option>Dog</option>
+                    <option>Ram</option>
+                </select>
+            </label>
+
             <p>Gender:</p>
             Male<label>
-            <input type="radio" name="sex"></label>
+            <input type="radio" name="sex" value="male"></label>
             Female<label>
-            <input type="radio" name="sex"></label><br>
+            <input type="radio" name="sex" value="female"></label><br>
             <input type="submit" value="Submit">
         </form>
 </body>

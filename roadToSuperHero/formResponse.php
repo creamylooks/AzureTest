@@ -9,4 +9,6 @@
 $name1=$_POST['fname'];
 $name2=$_POST['lname'];
 $gender=$_POST['sex'];
-echo "$name1 $name2 $gender";
+$superHero=$_POST['superHero'];
+$ans=$_POST['choice'];
+echo "$name1 $name2 $gender $superHero";
