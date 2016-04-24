@@ -11,10 +11,11 @@ define ('PASSWORD','12d5f6d8');
 define ('HOST','creamy');
 $sercon=mysqli_connect (SERVER,USER,PASSWORD,HOST);
 
-if ($sercon->connect_error) {
+/*if ($sercon->connect_error) {
     die("Connection failed: " . $sercon->connect_error);
 }
 echo "Connected successfully";
+*/
 
 
 
