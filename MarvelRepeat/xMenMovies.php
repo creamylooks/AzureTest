@@ -10,17 +10,15 @@ $collect= "SELECT * FROM marvelmovies WHERE title LIKE '%X-MEN%'";
 $pointer= mysqli_query($sercon,$collect);
 //or      $pointer=$sercon->query($collect);
 $row=(mysqli_num_rows($pointer));
+echo "<table><tr><th>Year Released</th><th>Title</th><th>Production Studio</th><th>Notes</th></tr>";
 while($row>0){
     $result=mysqli_fetch_array($pointer);
-    echo "
-          {$result['yearReleased']};
-          {$result['title']};
-          {$result['productionStudio']};
-          {$result['notes']} ";
+    echo "<tr>
+          <td>{$result['yearReleased']}</td>;
+          <td>{$result['title']}</td>;
+          <td>{$result['productionStudio']}</td>;
+          <td>{$result['notes']}</td></tr> ";
     $row--;
 }
-$cas="INSERT INTO users (username,password) VALUES (olajide,abdull) ";
-$done=mysql_query($sercon,$cas);
-if($done){
-echo "done it";}
-echo"dggf";
+echo"</table>";
+

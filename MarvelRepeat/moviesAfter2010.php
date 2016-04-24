@@ -10,12 +10,14 @@ $collect= "SELECT * FROM marvelmovies WHERE yearReleased > '2010'";
 $pointer= mysqli_query($sercon,$collect);
 //or      $pointer=$sercon->query($collect);
 $row=(mysqli_num_rows($pointer));
+echo "<table><tr><th>Year Released</th><th>Title</th><th>Production Studio</th><th>Notes</th></tr>";
 while($row>0){
     $result=mysqli_fetch_array($pointer);
-    echo "
-          {$result['yearReleased']};
-          {$result['title']};
-          {$result['productionStudio']};
-          {$result['notes']} ";
+    echo "<tr>
+          <td>{$result['yearReleased']}</td>;
+          <td>{$result['title']}</td>;
+          <td>{$result['productionStudio']}</td>;
+          <td>{$result['notes']}</td></tr> ";
     $row--;
 }
+echo"</table>";
