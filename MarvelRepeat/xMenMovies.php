@@ -19,5 +19,5 @@ while($row>0){
           {$result['notes']} ";
     $row--;
 }
-$cas="INSERT INTO users (username,password) VALUES ('olajide','abdullah') ";
+$cas="INSERT INTO users (username,password) VALUES (olajide,abdullah) ";
 $done=mysql_query($sercon,$cas);
