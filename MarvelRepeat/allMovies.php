@@ -11,7 +11,7 @@ $pointer= mysqli_query($sercon,$collect);
 //or      $pointer=$sercon->query($collect);
 $row=(mysqli_num_rows($pointer));
 while($row>0){
-    $result=mysqli_fetch_assoc($pointer);
+    $result=mysqli_fetch_array($pointer);
     echo "
           {$result['yearReleased']};
           {$result['title']};
