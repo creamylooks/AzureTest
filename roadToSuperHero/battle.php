@@ -5,6 +5,7 @@
     <title>Battle Form</title>
 </head>
 <body>
+ <?php include("connection.php");?>
     <form action="Insertbattle.php" method="post">
         <label>
            Select Super Hero <select name="superhrochar">
