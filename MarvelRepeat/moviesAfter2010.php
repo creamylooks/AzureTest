@@ -14,9 +14,9 @@ echo "<table><tr><th>Year Released</th><th>Title</th><th>Production Studio</th><
 while($row>0){
     $result=mysqli_fetch_array($pointer);
     echo "<tr>
-          <td>{$result['yearReleased']}</td>;
-          <td>{$result['title']}</td>;
-          <td>{$result['productionStudio']}</td>;
+          <td>{$result['yearReleased']}</td>
+          <td>{$result['title']}</td>
+          <td>{$result['productionStudio']}</td>
           <td>{$result['notes']}</td></tr> ";
     $row--;
 }
