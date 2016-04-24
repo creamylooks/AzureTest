@@ -11,6 +11,7 @@
                 <?php
             $sql="SELECT mainSuperpower FROM superheros";
             $res=mysqli_query($sercon,$sql);
+                echo "$res";
             $rows=mysqli_num_rows($res);
             while($rows>0){
                 $arr=mysqli_fetch_array($res);
