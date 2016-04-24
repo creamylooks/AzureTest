@@ -9,7 +9,7 @@ include("connection.php");
 $hero=$_POST['superheros'];
 $villian=$_POST['opponent'];
 
-$noname="INSERT INTO battles (superheroID,villanFought) VALUES ('$hero','$villian')";
+$noname="INSERT INTO battles (superheroID,villanFought) VALUES ('11','$villian')";
 if ($sercon->query($noname) === TRUE) {
     echo "New record created successfully";
 } else {
