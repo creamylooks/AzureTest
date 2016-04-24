@@ -13,9 +13,9 @@ $row=(mysqli_num_rows($pointer));
 while($row>0){
     $result=mysqli_fetch_array($pointer);
     echo "
-          $result{['yearReleased']};
-          $result{['title']};
-          $result{['productionStudio']};
-          $result{['notes']} ";
+          $result{[yearReleased]};
+          $result{[title]};
+          $result{[productionStudio]};
+          $result{[notes]} ";
  $row--;
 }
