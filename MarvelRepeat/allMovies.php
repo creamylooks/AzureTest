@@ -9,12 +9,13 @@ include ('connection.php');
 $collect= "SELECT * FROM marvelmovies";
 $pointer= mysqli_query($sercon,$collect);
 //or      $pointer=$sercon->query($collect);
-while($row = $result->fetch_array()){
+$row=(mysqli_num_rows($pointer));
+while($row>0){
+    $result=mysqli_fetch_array($pointer);
     echo "
-          $row[yearReleased];
-          $row[title];
-          $row[productionStudio];
-          $row[notes];
-    ";
-
+          $result{['yearReleased']};
+          $result{['title']};
+          $result{['productionStudio']};
+          $result{['notes']} ";
+ $row--;
 }
