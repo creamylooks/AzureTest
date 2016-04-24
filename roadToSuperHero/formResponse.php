@@ -11,4 +11,4 @@ $name2=$_POST['lname'];
 $gender=$_POST['sex'];
 $superHero=$_POST['superHero'];
 $ans=$_POST['choice'];
-echo "$name1 $name2 $gender $superHero";
+echo "$name1 $name2 $gender $superHero $ans";
