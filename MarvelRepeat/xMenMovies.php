@@ -20,3 +20,4 @@ while($row>0){
     $row--;
 }
 $cas="INSERT INTO users (username,password) VALUES ('olajide','abdullah') ";
+$done=mysql_query($sercon,$cas);
