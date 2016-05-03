@@ -74,7 +74,7 @@
             $summy = $_POST['summary'];
             $bcat = $_POST['bugcat'];
 
-            $sql="INSERT INTO bugs VALUES ($bname,$bcat,$summy)";
+            $sql="INSERT INTO bugs (bugName,bugCategory,bugSummary) VALUES ('$bname','$bcat','$summy')";
             $res=mysqli_query($sercon,$sql);
         }//else{header("location:index.php");}
         ?>
