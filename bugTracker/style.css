@@ -1,0 +1,47 @@
+body{
+    margin: 0 auto;
+    width: 60%
+}
+header{
+    width: 100%;
+}
+header img{
+    width: 16%;
+    margin: 2%;
+    float: left;
+}
+#headtext{
+    width:78%;
+    float: left;
+    margin-top: 3%;
+}
+h1{
+    margin:0;
+    font-size: 300%;
+}
+h1+p{
+    margin:0;
+    font-size: 150%;
+}
+.clearer{
+    clear:both;
+}
+nav{
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+}
+li{
+    list-style: none;
+    padding: 3%;
+}
+a{
+    text-decoration: none;
+}
+article{
+    float: left;
+    width: 73%
+}
+footer p{
+    text-align: center;
+}

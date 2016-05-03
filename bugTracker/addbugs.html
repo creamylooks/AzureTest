@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Bugs</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+            <!-- Begining of Header -->
+            <header>
+                <img src="logo.png" alt="logo of company"/>
+                <h1>BugTracker</h1>
+                <p>Keeping track of all the pesky little bugs</p>
+            </header>
+            <!-- End of Header -->
+            <!-- Begining of Main -->
+            <main>
+                <div class="clearer"></div>
+                <!-- Begining of Navigation -->
+                <nav>
+                    <ul>
+                        <li><a href="showbugs.html">All Bug Items</a></li>
+                        <li><a href="showbugs.html">Android Bugs</a></li>
+                        <li><a href="showbugs.html">iOS Bugs</a></li>
+                        <li><a href="showbugs.html">Windows Bugs</a></li>
+                        <li><a href="addbugs.html">Insert Bug</a></li>
+                    </ul>
+                </nav>
+                <!-- End of Navigation -->
+                <!-- Begining of Article -->
+                <article>
+                            <form>
+
+                                <label>Bug Name: &nbsp; &nbsp;&nbsp;&nbsp;
+                                    <input type="text" name="Bugname" required><br/>
+                                </label>
+
+
+                                <label>Bug Summary &nbsp;
+                                    <textarea name="summary" cols="14" rows="3" required></textarea><br/>
+                                </label>
+                                <label>Bug Category &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <select name="bugcat">
+                                        <option disabled>Select a Bug</option>
+                                        <option name="Android">Android Bugs</option>
+                                        <option name="iOS">iOS Bugs</option>
+                                        <option name="windows">Windows Bugs</option>
+                                    </select><br/>
+                                </label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit">
+
+
+                            </form>
+                </article>
+                <!-- End of Article -->
+            </main>
+            <!-- End of Main -->
+            <!-- Begining of Footer -->
+            <footer>
+                <div class="clearer"></div>
+                <p>&copy;Designed By Ibrahim,2016</p>
+            </footer>
+            <!-- End of Footer -->
+</body>
+</html>
