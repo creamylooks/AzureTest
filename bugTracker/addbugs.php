@@ -46,9 +46,9 @@
                         <label>Bug Category &nbsp;&nbsp;&nbsp;&nbsp;
                             <select name="bugcat">
                                 <option disabled>Select a Bug</option>
-                                <option name="Android">Android Bugs</option>
-                                <option name="iOS">iOS Bugs</option>
-                                <option name="windows">Windows Bugs</option>
+                                <option name="Android">AndroidBug</option>
+                                <option name="iOS">iOSBug</option>
+                                <option name="windows">WindowsBug</option>
                             </select><br/>
                         </label>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit">
@@ -75,6 +75,6 @@
             $summy = $_POST['summary'];
             $bcat = $_POST['bugcat'];
 
-            $sql="INSERT INTO bugs (bugName,bugCategory, bugSummary) VALUES ($bname,$bcat,$summy)";
+            $sql="INSERT INTO bugs (bugName,bugCategory,bugSummary) VALUES ($bname,$bcat,$summy)";
         }//else{header("location:index.php");}
         ?>
