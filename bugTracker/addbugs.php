@@ -76,5 +76,5 @@
             $bcat = $_POST['bugcat'];
 
             $sql="INSERT INTO bugs (bugName,bugCategory, bugSummary) VALUES ($bname,$bcat,$summy)";
-        }//else{header("location:index.php");}
+        }else{header("location:index.php");}
         ?>
