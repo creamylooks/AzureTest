@@ -55,9 +55,9 @@
                 while ($row > 0) {
                     $answer = mysqli_fetch_array($res);
                     echo "<section>
-                        <h2>{$answer['bugName']}</h2>;
-                        <p>{$answer['bugCategory']}</p>;
-                        <p>{$answer['bugSummary']}</p>;
+                        <h2>{$answer['bugName']}</h2>
+                        <p>{$answer['bugCategory']}</p>
+                        <p>{$answer['bugSummary']}</p>
                   </section>";
                     $row--;
                 }
@@ -69,9 +69,9 @@
                 while ($row > 0) {
                     $answer = mysqli_fetch_array($res);
                     echo "<section>
-                        <h2>{$answer['bugName']}</h2>;
-                        <p>{$answer['bugCategory']}</p>;
-                        <p>{$answer['bugSummary']}</p>;
+                        <h2>{$answer['bugName']}</h2>
+                        <p>{$answer['bugCategory']}</p>
+                        <p>{$answer['bugSummary']}</p>
                   </section>";
                     $row--;
                 }
@@ -83,9 +83,9 @@
                 while ($row > 0) {
                     $answer = mysqli_fetch_array($res);
                     echo "<section>
-                        <h2>{$answer['bugName']}</h2>;
-                        <p>{$answer['bugCategory']}</p>;
-                        <p>{$answer['bugSummary']}</p>;
+                        <h2>{$answer['bugName']}</h2>
+                        <p>{$answer['bugCategory']}</p>
+                        <p>{$answer['bugSummary']}</p>
                   </section>";
                     $row--;
                 }
@@ -97,9 +97,9 @@
                 while ($row > 0) {
                     $answer = mysqli_fetch_array($res);
                     echo "<section>
-                        <h2>{$answer['bugName']}</h2>;
-                        <p>{$answer['bugCategory']}</p>;
-                        <p>{$answer['bugSummary']}</p>;
+                        <h2>{$answer['bugName']}</h2>
+                        <p>{$answer['bugCategory']}</p>
+                        <p>{$answer['bugSummary']}</p>
                   </section>";
                     $row--;
                 }
