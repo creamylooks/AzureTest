@@ -1,4 +1,3 @@
-<?php include("connection.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,5 +75,6 @@
             $bcat = $_POST['bugcat'];
 
             $sql="INSERT INTO bugs (bugName,bugCategory,bugSummary) VALUES ($bname,$bcat,$summy)";
+            $res=mysqli_query($sercon,$sql);
         }//else{header("location:index.php");}
         ?>
