@@ -1,6 +1,6 @@
 body{
     margin: 0 auto;
-    width: 60%
+    width: 50%
 }
 header{
     width: 100%;
@@ -44,4 +44,7 @@ article{
 }
 footer p{
     text-align: center;
+}
+section{
+    border-bottom: 1px solid black;
 }

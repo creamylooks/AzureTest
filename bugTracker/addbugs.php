@@ -1,3 +1,4 @@
+include("connection.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,28 +32,29 @@
                 <!-- End of Navigation -->
                 <!-- Begining of Article -->
                 <article>
-                            <form>
 
-                                <label>Bug Name: &nbsp; &nbsp;&nbsp;&nbsp;
-                                    <input type="text" name="Bugname" required><br/>
-                                </label>
+                    <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
 
-
-                                <label>Bug Summary &nbsp;
-                                    <textarea name="summary" cols="14" rows="3" required></textarea><br/>
-                                </label>
-                                <label>Bug Category &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <select name="bugcat">
-                                        <option disabled>Select a Bug</option>
-                                        <option name="Android">Android Bugs</option>
-                                        <option name="iOS">iOS Bugs</option>
-                                        <option name="windows">Windows Bugs</option>
-                                    </select><br/>
-                                </label>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit">
+                        <label>Bug Name: &nbsp; &nbsp;&nbsp;&nbsp;
+                            <input type="text" name="Bugname" required><br/>
+                        </label>
 
 
-                            </form>
+                        <label>Bug Summary &nbsp;
+                            <textarea name="summary" cols="14" rows="3" required></textarea><br/>
+                        </label>
+                        <label>Bug Category &nbsp;&nbsp;&nbsp;&nbsp;
+                            <select name="bugcat">
+                                <option disabled>Select a Bug</option>
+                                <option name="Android">Android Bugs</option>
+                                <option name="iOS">iOS Bugs</option>
+                                <option name="windows">Windows Bugs</option>
+                            </select><br/>
+                        </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit">
+
+
+                    </form>
                 </article>
                 <!-- End of Article -->
             </main>
@@ -65,3 +67,14 @@
             <!-- End of Footer -->
 </body>
 </html>
+        <?php if($_SERVER['PHP_SELF']=='GET'){
+            header ("location:addbug.php");
+        }
+        elseif($_SERVER['PHP_SELF']=='POST'){
+            $bname=$_POST['Bugname'];
+            $summy = $_POST['summary'];
+            $bcat = $_POST['bugcat'];
+
+            $sql="INSERT INTO bugs (bugName,bugCategory, bugSummary) VALUES ($bname,$bcat,$summy)";
+        }else{header("location:index.php");}
+        ?>
