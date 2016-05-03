@@ -22,11 +22,11 @@ include("connection.php");
                 <!-- Begining of Navigation -->
                 <nav>
                     <ul>
-                        <li><a href="showbugs.html">All Bug Items</a></li>
-                        <li><a href="showbugs.html">Android Bugs</a></li>
-                        <li><a href="showbugs.html">iOS Bugs</a></li>
-                        <li><a href="showbugs.html">Windows Bugs</a></li>
-                        <li><a href="addbugs.html">Insert Bug</a></li>
+                        <li><a href="showbugs.php?category=all">All Bug Items</a></li>
+                        <li><a href="showbugs.php?category=android">Android Bugs</a></li>
+                        <li><a href="showbugs.php?category=iOS">iOS Bugs</a></li>
+                        <li><a href="showbugs.php?category=windows">Windows Bugs</a></li>
+                        <li><a href="addbugs.php">Insert Bug</a></li>
                     </ul>
                 </nav>
                 <!-- End of Navigation -->

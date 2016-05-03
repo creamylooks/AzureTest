@@ -36,10 +36,10 @@
     <!-- Begining of Navigation -->
     <nav>
         <ul>
-            <li><a href="showbugs.php">All Bug Items</a></li>
-            <li><a href="showbugs.php">Android Bugs</a></li>
-            <li><a href="showbugs.php">iOS Bugs</a></li>
-            <li><a href="showbugs.php">Windows Bugs</a></li>
+            <li><a href="showbugs.php?category=all">All Bug Items</a></li>
+            <li><a href="showbugs.php?category=android">Android Bugs</a></li>
+            <li><a href="showbugs.php?category=iOS">iOS Bugs</a></li>
+            <li><a href="showbugs.php?category=windows">Windows Bugs</a></li>
             <li><a href="addbugs.php">Insert Bug</a></li>
         </ul>
     </nav>
