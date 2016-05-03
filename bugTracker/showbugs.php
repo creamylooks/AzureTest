@@ -90,7 +90,7 @@
                     $row--;
                 }
             break;
-            case 'WindowsBug':
+            case 'windows':
                 $sql = "SELECT bugName,bugCategory, bugSummary FROM bugs WHERE bugCategory = 'WindowsBug'";
                 $res = mysqli_query($sercon, $sql);
                 $row = (mysqli_num_rows($res));
