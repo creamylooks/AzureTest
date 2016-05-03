@@ -46,9 +46,9 @@
                         <label>Bug Category &nbsp;&nbsp;&nbsp;&nbsp;
                             <select name="bugcat">
                                 <option disabled>Select a Bug</option>
-                                <option name="Android">AndroidBug</option>
-                                <option name="iOS">iOSBug</option>
-                                <option name="windows">WindowsBug</option>
+                                <option name="AndroidBug">AndroidBug</option>
+                                <option name="iOSBug">iOSBug</option>
+                                <option name="WindowsBug">WindowsBug</option>
                             </select><br/>
                         </label>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit">
