@@ -16,4 +16,4 @@ if ($sercon->query($ins) === TRUE) {
     echo "New record created successfully";
 } else {
     echo "Error: " . $ins . "<br>" . $sercon->error;
-}header('location:index.php');
+}header('location:index2.php');
