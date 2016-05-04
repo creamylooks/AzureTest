@@ -32,7 +32,7 @@
                 <!-- Begining of Article -->
                 <article>
 
-                    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+                    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
 
                         <label>Bug Name: &nbsp; &nbsp;&nbsp;&nbsp;
                             <input type="text" name="Bugname" required><br/>
