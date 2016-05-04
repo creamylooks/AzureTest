@@ -66,10 +66,10 @@
             <!-- End of Footer -->
 </body>
 </html>
-        <?php if($_SERVER['PHP_SELF']==='GET'){
+        <?php if($_SERVER['REQUEST_METHOD']==='GET'){
             header ("location:addbug.php");
         }
-        elseif($_SERVER['PHP_SELF']==='POST'){
+        elseif($_SERVER['REQUEST_METHOD']==='POST'){
             $bname=$_POST['Bugname'];
             $summy = $_POST['summary'];
             $bcat = $_POST['bugcat'];
