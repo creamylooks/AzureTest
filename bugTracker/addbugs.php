@@ -66,15 +66,15 @@
             <!-- End of Footer -->
 </body>
 </html>
-        <?php if($_SERVER['PHP_SELF']=='GET'){
+        <?php if($_SERVER['PHP_SELF']==='GET'){
             header ("location:addbug.php");
         }
-        elseif($_SERVER['PHP_SELF']=='POST'){
+        elseif($_SERVER['PHP_SELF']==='POST'){
             $bname=$_POST['Bugname'];
             $summy = $_POST['summary'];
             $bcat = $_POST['bugcat'];
 
             $sql="INSERT INTO bugs (bugName,bugCategory,bugSummary) VALUES ({$bname},{$bcat},{$summy})";
             $res=mysqli_query($sercon,$sql);
-        }//else{header("location:index.php");}
+        }else{header("location:index.php");}
         ?>
