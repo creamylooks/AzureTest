@@ -81,7 +81,10 @@
                     <a href="#"><img src="#" alt="twitter logo"/></a>
                     <a href="#"><img src="#" alt="instagram logo"/></a>
                 </div>
-                <a href="#"><img src="#" alt="back to top"></a>
+                <div>
+                    <a href="#"><img src="#" alt="back to top arrow"></a>
+                    <p>Back to Top</p>
+                </div>
                 <p>Copyright &copy; Alluring Typharh 2016</p>
             </footer>
 </body>
