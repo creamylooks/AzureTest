@@ -17,7 +17,7 @@
             </header>
             <nav>
                     <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#">HOME</a></li>
                             <li><a href="#">PRODUCTS</a></li>
                             <li><a href="#">ABOUT US</a></li>
                             <li><a href="#">TESTIMONIALS</a></li>
