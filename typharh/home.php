@@ -29,6 +29,7 @@
                         <img src="#" alt="main image"/>
                         <div>
                             <h3>New Arrivals</h3>
+                            <img src="#" alt="pointer arrow"/>
                             <div class="individual">
                                 <img src="#" alt="image 1"/>
                                 <p>Put its price here</p>
@@ -53,9 +54,11 @@
                             <img src="#" alt="image 6"/>
                             <p>Put its price here</p>
                             </div>
+                            <img src="#" alt="pointer arrow"/>
                         </div>
                     </section>
                     <aside>
+                        <!-- Continue from here -->
                             <div>
 
                             </div>
@@ -66,16 +69,20 @@
 
             </main>
             <footer>
-                <h3></h3>
-                <img src="#" alt="logo"/>
-                <img src="#" alt="visa logo"/>
-                <img src="#" alt="mastercard logo"/>
-                <img src="#" alt="paypal logo"/>
-                <img src="#" alt="facebook logo"/>
-                <img src="#" alt="twitter logo"/>
-                <img src="#" alt="instagram logo"/>
+                <h3>Connect With Us</h3>
+                <div>
+                    <img src="#" alt="brand logo"/>
+                    <img src="#" alt="visa logo"/>
+                    <img src="#" alt="mastercard logo"/>
+                    <img src="#" alt="paypal logo"/>
+                </div>
+                <div>
+                    <a href="#"><img src="#" alt="facebook logo"/></a>
+                    <a href="#"><img src="#" alt="twitter logo"/></a>
+                    <a href="#"><img src="#" alt="instagram logo"/></a>
+                </div>
                 <a href="#"><img src="#" alt="back to top"></a>
-                <p>copyright bullshit</p>
+                <p>Copyright &copy; Alluring Typharh 2016</p>
             </footer>
 </body>
 </html>
