@@ -6,9 +6,9 @@
 </head>
 <body>
             <header>
-                        <img src="assets/Typhar.png" alt="brand logo"/>
+                        <img src="Typhar.png" alt="brand logo"/>
                         <div>
-                            <img src="assets/searchicon.png" alt="search icon"/>
+                            <img src="searchicon.png" alt="search icon"/>
                             <p>Search Website</p>
                             <p>Go</p>
                         </div>
@@ -71,15 +71,15 @@
             <footer>
                 <h3>Connect With Us</h3>
                 <div>
-                    <img src="assets/typharh.jpg" alt="brand logo"/>
-                    <img src="assets/visa_logo.jpg" alt="visa logo"/>
-                    <img src="assets/MasterCard.jpg" alt="mastercard logo"/>
-                    <img src="assets/Paypal_logo.png" alt="paypal logo"/>
+                    <img src="typharh.jpg" alt="brand logo"/>
+                    <img src="visa_logo.jpg" alt="visa logo"/>
+                    <img src="MasterCard.jpg" alt="mastercard logo"/>
+                    <img src="Paypal_logo.png" alt="paypal logo"/>
                 </div>
                 <div>
-                    <a href="https://www.facebook.com/profile.php?id=100007788017332"><img src="assets/fb.jpg" alt="facebook logo"/></a>
-                    <a href="https://twitter.com/Hacktypharh"><img src="assets/twitter.png" alt="twitter logo"/></a>
-                    <a href="https://www.instagram.com/alluring_typharh"><img src="assets/instagram.png" alt="instagram logo"/></a>
+                    <a href="https://www.facebook.com/profile.php?id=100007788017332"><img src="fb.jpg" alt="facebook logo"/></a>
+                    <a href="https://twitter.com/Hacktypharh"><img src="twitter.png" alt="twitter logo"/></a>
+                    <a href="https://www.instagram.com/alluring_typharh"><img src="instagram.png" alt="instagram logo"/></a>
                 </div>
                 <div>
                     <a href="https://www.creamy.azurewebsites.net/typharh/home.php"><img src="#" alt="back to top arrow"></a>
