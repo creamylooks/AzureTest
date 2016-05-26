@@ -71,7 +71,7 @@
             <footer>
                 <h3>Connect With Us</h3>
                 <div>
-                    <img src="typharh.jpg" alt="brand logo"/>
+                    <img src="Typhar.png" alt="brand logo"/>
                     <img src="visa_logo.jpg" alt="visa logo"/>
                     <img src="MasterCard.jpg" alt="mastercard logo"/>
                     <img src="Paypal_logo.png" alt="paypal logo"/>
