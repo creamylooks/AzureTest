@@ -72,17 +72,17 @@
                 <h3>Connect With Us</h3>
                 <div>
                     <img src="assets/typharh.jpg" alt="brand logo"/>
-                    <img src="#" alt="visa logo"/>
-                    <img src="#" alt="mastercard logo"/>
-                    <img src="#" alt="paypal logo"/>
+                    <img src="assets/visa_logo.jpg" alt="visa logo"/>
+                    <img src="assets/MasterCard.jpg" alt="mastercard logo"/>
+                    <img src="assets/Paypal_logo.png" alt="paypal logo"/>
                 </div>
                 <div>
-                    <a href="#"><img src="#" alt="facebook logo"/></a>
-                    <a href="#"><img src="#" alt="twitter logo"/></a>
-                    <a href="#"><img src="#" alt="instagram logo"/></a>
+                    <a href="https://www.facebook.com/profile.php?id=100007788017332"><img src="assets/fb.jpg" alt="facebook logo"/></a>
+                    <a href="https://twitter.com/Hacktypharh"><img src="assets/twitter.png" alt="twitter logo"/></a>
+                    <a href="www.instagram.com/alluring_typharh"><img src="assets/instagram.png" alt="instagram logo"/></a>
                 </div>
                 <div>
-                    <a href="#"><img src="#" alt="back to top arrow"></a>
+                    <a href="www.creamy.azurewebsites.net/typharh/home.php"><img src="#" alt="back to top arrow"></a>
                     <p>Back to Top</p>
                 </div>
                 <p>Copyright &copy; Alluring Typharh 2016</p>
