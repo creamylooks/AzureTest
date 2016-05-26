@@ -26,7 +26,7 @@
             </nav>
             <main>
                     <section>
-                        <img src="assets/banner1.jpg" alt="main image"/>
+                        <img src="banner1.jpg" alt="main image"/>
                         <div>
                             <h3>New Arrivals</h3>
                             <img src="#" alt="pointer arrow"/>
