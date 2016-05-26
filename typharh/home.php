@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <script>
+        var x = 1;
+        var y ="banner";
+        function count (x){
+            y = y + "x";
+            return y;
+        }
+
+    </script>
 </head>
 <body>
             <header>
@@ -12,16 +21,16 @@
                             <p>Search Website</p>
                             <p>Go</p>
                         </div>
-                        <a href="#"><p>Sign in</p></a>
-                        <a href="#"><p>Register</p></a>
+                        <a href="login.php"><p>Sign in</p></a>
+                        <a href="signup.php"><p>Register</p></a>
             </header>
             <nav>
                     <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">PRODUCTS</a></li>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">TESTIMONIALS</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="home.php">HOME</a></li>
+                            <li><a href="products.php">PRODUCTS</a></li>
+                            <li><a href="about.php">ABOUT US</a></li>
+                            <li><a href="testimonials.php">TESTIMONIALS</a></li>
+                            <li><a href="contact.php">CONTACT US</a></li>
                     </ul>
             </nav>
             <main>
@@ -40,18 +49,6 @@
                             </div>
                             <div class="individual">
                             <img src="#" alt="image 3"/>
-                            <p>Put its price here</p>
-                            </div>
-                            <div class="individual">
-                            <img src="#" alt="image 4"/>
-                            <p>Put its price here</p>
-                            </div>
-                            <div class="individual">
-                            <img src="#" alt="image 5"/>
-                            <p>Put its price here</p>
-                            </div>
-                            <div class="individual">
-                            <img src="#" alt="image 6"/>
                             <p>Put its price here</p>
                             </div>
                             <img src="#" alt="pointer arrow"/>
