@@ -79,10 +79,10 @@
                 <div>
                     <a href="https://www.facebook.com/profile.php?id=100007788017332"><img src="assets/fb.jpg" alt="facebook logo"/></a>
                     <a href="https://twitter.com/Hacktypharh"><img src="assets/twitter.png" alt="twitter logo"/></a>
-                    <a href="www.instagram.com/alluring_typharh"><img src="assets/instagram.png" alt="instagram logo"/></a>
+                    <a href="https://www.instagram.com/alluring_typharh"><img src="assets/instagram.png" alt="instagram logo"/></a>
                 </div>
                 <div>
-                    <a href="www.creamy.azurewebsites.net/typharh/home.php"><img src="#" alt="back to top arrow"></a>
+                    <a href="https://www.creamy.azurewebsites.net/typharh/home.php"><img src="#" alt="back to top arrow"></a>
                     <p>Back to Top</p>
                 </div>
                 <p>Copyright &copy; Alluring Typharh 2016</p>
