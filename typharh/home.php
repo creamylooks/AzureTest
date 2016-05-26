@@ -6,9 +6,9 @@
 </head>
 <body>
             <header>
-                        <img src="#" alt="brand logo"/>
+                        <img src="assets/Typhar.png" alt="brand logo"/>
                         <div>
-                            <img src="#" alt="search icon"/>
+                            <img src="assets/searchicon.png" alt="search icon"/>
                             <p>Search Website</p>
                             <p>Go</p>
                         </div>
@@ -26,7 +26,7 @@
             </nav>
             <main>
                     <section>
-                        <img src="#" alt="main image"/>
+                        <img src="assets/banner1.jpg" alt="main image"/>
                         <div>
                             <h3>New Arrivals</h3>
                             <img src="#" alt="pointer arrow"/>
@@ -71,7 +71,7 @@
             <footer>
                 <h3>Connect With Us</h3>
                 <div>
-                    <img src="#" alt="brand logo"/>
+                    <img src="assets/typharh.jpg" alt="brand logo"/>
                     <img src="#" alt="visa logo"/>
                     <img src="#" alt="mastercard logo"/>
                     <img src="#" alt="paypal logo"/>
