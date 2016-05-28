@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <script>
+       var d = new Date();
+       document.getElementById("des").innerHTML ="Copyright &copy; Alluring Typharh"+d.getFullYear();
         var x = 1;
         var y ="banner";
         function count (x){
@@ -82,7 +84,7 @@
                     <a href="https://www.creamy.azurewebsites.net/typharh/home.php"><img src="#" alt="back to top arrow"></a>
                     <p>Back to Top</p>
                 </div>
-                <p>Copyright &copy; Alluring Typharh 2016</p>
+                <p id="des"> </p>
             </footer>
 </body>
 </html>
