@@ -5,6 +5,7 @@
     <title>Home</title>
     <script>
        var d = new Date();
+       d.setFullYear("2016");
        document.getElementById("des").innerHTML = "Copyright &copy; Alluring Typharh"+d.getFullYear();
         var x = 1;
         var y ="banner";
