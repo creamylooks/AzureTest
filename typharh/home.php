@@ -3,18 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <script>
-       var d = new Date();
-       d.setFullYear("2016");
-       document.getElementById("des").innerHTML = "Copyright &copy; Alluring Typharh"+d;
-        var x = 1;
-        var y ="banner";
-        function count (x){
-            y = y + "x";
-            return y;
-        }
 
-    </script>
 </head>
 <body>
             <header>
@@ -87,5 +76,17 @@
                 </div>
                 <p id="des"> </p>
             </footer>
+            <script>
+                var d = new Date();
+                d.setFullYear("2016");
+                document.getElementById("des").innerHTML = "Copyright &copy; Alluring Typharh"+d;
+                var x = 1;
+                var y ="banner";
+                function count (x){
+                    y = y + "x";
+                    return y;
+                }
+
+            </script>
 </body>
 </html>
